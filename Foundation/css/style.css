@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease 0.4s;
+}
+
+body {
+    background-color: rgb(250, 254, 255);
+}
+
+nav {
+    background-color: rgb(250, 254, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 1px 5px rgb(216, 216, 216);
+    z-index: 100;
+}
+
+.navEl {
+    margin: auto;
+    padding: 0 10px;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navEl img {
+    width: 170px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.navEl button {
+    font-size: 17px;
+    padding: 10px 20px;
+    border: 1px solid rgb(111, 205, 236);
+    border-radius: 50px;
+    background-color: transparent;
+    color: rgb(111, 205, 236);
+    cursor: pointer;
+    user-select: none;
+}
+
+.navEl button:hover {
+    background-color: rgb(111, 205, 236);
+    color: white;
+}
+
+.navEl button:active {
+    transform: scale(0.9);
+}
+
+.headerContent {
+    padding: 150px 0 50px 150px;
+    margin: 100px 0 0 0;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    min-height: 86.5vh;
+}
+
+.headerContent h1 {
+    max-width: 800px;
+    font-size: 50px;
+    color: rgb(12, 154, 201);
+}
+
+.headerContent p {
+    max-width: 600px;
+    margin: 30px 2px;
+    line-height: 23px;
+    color: rgb(57, 153, 184);
+}
+
+.styledContainer {
+    position: absolute;
+    background-color: rgba(173, 216, 230, 0.165);
+    padding: 20px;
+    top: 0;
+    right: 0;
+    left: 40%;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+/* media queries 764 */
+
+main {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.art_1,
+.art_3 {
+    display: flex;
+    padding: 10px;
+    /* background-color: red; */
+    gap: 30px;
+}
+
+.art_1 section,
+.art_3 section {
+    flex: 1;
+    /* background-color: blue; */
+    padding: 10px;
+}
+
+.art_1 section .imgCan,
+.art_3 section .imgCan {
+    /* background-color: orange; */
+    max-width: 350px;
+    height: 350px;
+    position: relative;
+    margin: 10px 130px 0 auto;
+}
+
+.art_1 section .imgCan img,
+.art_3 section .imgCan img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.art_1 section .imgCan div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(173, 216, 230, 0.165);
+    bottom: -20px;
+    right: -60px;
+    z-index: -1;
+}
+
+.art_1 section h2,
+.art_3 section h2,
+.art_4 section h2 {
+    color: rgb(92, 199, 234);
+    margin: 40px 0;
+}
+
+.art_1 section h3,
+.art_3 section h3,
+.art_4 section h3 {
+    font-size: 50px;
+    max-width: 600px;
+    color: rgb(104, 199, 231);
+}
+
+.art_1 section .purpose {
+    /* background-color: red; */
+    padding: 20px 0;
+    width: fit-content;
+}
+
+.purpose .indivPur {
+    display: flex;
+    /* background-color: blue; */
+    padding: 2px 0;
+    width: 550px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.indivPur .line {
+    height: 2px;
+    width: 35px;
+    background-color: rgb(116, 203, 232);
+    margin: 10px 0 0 0;
+}
+
+.indivPur .text {
+    padding: 0 0 0 20px;
+    flex: 1;
+}
+
+.text h4 {
+    color: rgb(92, 199, 234);
+    font-size: 20px;
+
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(9, 62, 85);
+}
+
+/*  */
+.art_2 section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.art_2 section p {
+    color: rgb(83, 200, 239);
+    margin: 20px 0;
+}
+
+.art_2 section h2 {
+    color: rgb(52, 193, 240);
+    line-height: 30px;
+}
+
+.art_2 .system {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px auto;
+    /* background-color: red; */
+}
+
+.system .indivSys {
+    flex: 1;
+    /* background-color: blue; */
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.indivSys img {
+    background-color: lightblue;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.indivSys .indivdis h3 {
+    color: rgb(41, 75, 89);
+    margin: 5px 0 0 0;
+}
+
+.indivSys .indivdis p {
+    margin: 15px 0 0 0;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/*  */
+
+.art_3 section .imgCan div {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-color: rgba(173, 216, 230, 0.165);
+    right: -60px;
+    bottom: 20px;
+    z-index: -1;
+}
+
+.art_3 section p,
+.art_4 section p {
+    line-height: 30px;
+    margin: 10px;
+    max-width: 600px;
+    font-size: 18px;
+    color: rgb(9, 62, 85);
+}
+
+.art_4 {
+    /* background-color: red; */
+    padding: 2px;
+    display: flex;
+    gap: 10px;
+    min-height: 50vh;
+    margin: 0 0 50px 0;
+}
+
+.art_4 section {
+    flex: 1;
+    padding: 2px;
+    /* background-color: white; */
+
+}
+
+.art_4 .rel {
+    position: relative;
+}
+
+.art_4 .rel div {
+    position: absolute;
+    background-color: rgba(152, 211, 231, 0.296);
+    top: 0;
+    right: -80px;
+    left: 30%;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/*media queries 764  for nav , header  */
+
+@media screen and (max-width:992px) {
+    .headerContent {
+        padding: 150px 0 0 50px;
+    }
+}
+
+@media screen and (max-width:764px) {
+    .headerContent {
+        padding: 150px 0 0 30px;
+    }
+
+    .headerContent h1 {
+        font-size: 35px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:324px) {
+    .headerContent {
+        padding: 150px 10px 0 10px;
+    }
+
+    .headerContent h1 {
+        font-size: 33px;
+        max-width: 400px;
+    }
+}
+
+
+/*  */
+
+
+
+@media screen and (max-width:1230px) {
+
+    .art_1,
+    .art_3 {
+        gap: 10px;
+        padding: 0 10px 0 0;
+    }
+}
+
+
+@media screen and (max-width:1114px) {
+
+    .art_1,
+    .art_3 {
+        flex-direction: column;
+    }
+
+    .art_1 section .imgCan,
+    .art_3 section .imgCan {
+        margin: auto;
+    }
+
+    .art_3 section p {
+        margin: 10px auto;
+    }
+
+    .art_1 section h2,
+    .art_3 section h2 {
+        text-align: center;
+
+    }
+
+    .art_1 section h3,
+    .art_3 section h3 {
+        margin: auto;
+    }
+
+    .art_1 section .purpose {
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width:640px) {
+    .purpose .indivPur {
+        width: fit-content;
+    }
+
+    .art_1 section {
+        padding: 10px;
+    }
+
+    .art_1 section h3,
+    .art_3 section h3 {
+        font-size: 40px;
+        margin: 0 0 0 10px;
+    }
+
+    .imgCan {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/*  */
+
+
+@media screen and (max-width:1082px) {
+    .art_2 .system {
+        flex-direction: column;
+    }
+}
+
+/* 929 */
+
+@media screen and (max-width:929px) {
+    .art_4 .rel {
+        /* display: none; */
+        flex: 0.5;
+    }
+}
+
+@media screen and (max-width:649px) {
+    .art_4 .rel {
+        /* display: none; */
+        flex: 0;
+    }
+}
