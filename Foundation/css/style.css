@@ -291,6 +291,22 @@ main {
     z-index: -1;
 }
 
+footer {
+    background-color: rgba(152, 211, 231, 0.296);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    line-height: 20px;
+    color: rgb(9, 62, 85);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer .sec {
+    flex: 1;
+    max-width: 650px;
+    /* background-color: red; */
+}
 
 /*media queries 764  for nav , header  */
 
@@ -367,6 +383,10 @@ main {
     .art_1 section .purpose {
         margin: auto;
     }
+
+    footer {
+        flex-direction: column;
+    }
 }
 
 
@@ -415,3 +435,4 @@ main {
         flex: 0;
     }
 }
+
